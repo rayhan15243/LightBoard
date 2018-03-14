@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light Board</title>
+	<!-- External JavaScript file for the functionality of the light board-->
+	<script src="colours.js"></script>
+	<!-- External CSS file for the grid layout -->
+	<link rel="stylesheet" type="text/css" href="grid.css"></link>
+</head>
+
+<body>
+<h1>Light Board</h1>
+	<!--Grid for the light board-->
+	<table>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td id="white"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td id="yellow"></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td id="blue"></td>
+		<td></td>
+		<td id="green"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td id="orange"></td>
+		<td></td>
+		<td></td>
+	</tr>
+	</table>
+	<br /> <br />
+	<script>
+	<!--The function lightUp(); is executed once the page is loaded.-->
+		lightUp();
+	</script>
+	<!-- When clicked, clears the colours that have been loaded and restarts the sequence again. This button is invisible from the start, but when the colours are all loaded, the button is visible.-->
+	<button id="button" onClick="resetSequence()">Reset</button>
+</body>
+</html>
